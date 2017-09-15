@@ -1,0 +1,34 @@
+.headerTop {
+	display: flex;
+	border: 1px solid red;
+}
+
+.logo {
+	border: 1px solid purple;
+}
+
+.headerNav {
+	display: flex;
+	border: 1px solid blue;
+	list-style-type: none;
+
+	button {
+		border: none;
+		color: $hoverGray;
+		font-family: $sansSerif;
+		font-size: 1rem;
+		background: none;
+
+	}
+}
+
+.headerSquare {
+	background-color: $yellow;
+	width: 62px;
+	height: 62px;
+	border-radius: 40%;
+	transform: rotate(30deg);
+	margin-top: 30px;
+	margin-left: 30px;
+}
+

@@ -1,0 +1,67 @@
+.main {
+	margin-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	p {
+		font-size: 1.2rem;
+	}
+	.outerCircle {
+		position: relative;
+		min-width: 440px;
+		min-height: 440px;
+		border-radius: 50%;
+		background-image: url("../../assets/profile_pam_lau_sm.jpg");
+		background-repeat: no-repeat;
+		background-position: 10% 10%;
+		
+		.innerCircle {
+			min-width: 180px;
+			min-height: 180px;
+			transform: rotate(30deg);
+			border-radius: 40%;
+			border: 2px solid $yellow;
+			background-color: white;
+			position: absolute;
+			// box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+			top: 55%;
+			left: 65%;
+
+			.clips {
+				margin-top: 50px;
+				margin-left: 40px;
+				fill: $yellow;
+				width: 80px;
+				transform: rotate(50deg);
+			}
+
+			// &:before {
+			// 	content:"";
+			// 	position: absolute;
+			// 	width: 200%;
+			// 	height: 200%;
+			// 	top: -50%;
+			// 	left: 3%;
+			// 	background: url("../../assets/noun_proj_clip.svg") 0 0 no-repeat;
+			// 	background-size: 30%;
+			// 	transform: rotate(50deg);
+			// 	z-index: 10;
+			// }
+		}
+	}
+
+	.mainText {
+		width: 40%;
+
+		.mainButton {
+			background-color: $yellow;
+			font-size: 1.2rem;
+			width: 164px;
+			height: 52px;
+			color: white;
+			border-radius: 4px;
+			border: none;
+		}
+	}
+}

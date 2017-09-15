@@ -2,3 +2,6 @@ node_modules
 public/styles/style.css
 public/scripts/main.js
 .DS_Store
+*.psd
+*.zip
+design_ignore

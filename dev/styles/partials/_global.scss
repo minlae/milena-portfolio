@@ -1,0 +1,42 @@
+body {
+	// background-image: url("../../assets/yellow2.png");
+	background-color: white;
+	background-repeat: repeat;
+	color: $mainText;
+	font-size: 10px;
+	// color: white;
+}
+
+h1 {
+	font-family: $displayFont;
+	font-size: 3.3rem;
+}
+
+h2 {
+	margin-top: 0;
+	padding-top: 0;
+	margin-bottom: 40px;
+	font-family: $displayFont;
+	font-size: 2.0rem;
+	text-align: center;
+}
+
+h3 {
+	font-family: $sansSerif;
+	font-size: 1.8rem;
+}
+
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.styledSquare {
+	background-color: $yellow;
+	width: 100px;
+	height: 100px;
+	border-radius: 40%;
+	transform: rotate(30deg);
+	margin-top: 30px;
+	margin-left: 30px;
+}

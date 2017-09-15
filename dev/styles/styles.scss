@@ -1,4 +1,7 @@
-body {
-	background: blue;
-	color: white;
-}
+@import "partials/setup";
+@import "partials/variables";
+@import "partials/global";
+@import "partials/header";
+@import "partials/skills";
+@import "partials/main";
+@import "partials/portfolio";
