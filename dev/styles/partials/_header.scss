@@ -37,9 +37,9 @@ header {
 
 			}
 
-			@include respond-to ("small") {
-			  margin-left: 10px;
-			}
+			// @include respond-to ("small") {
+			//   margin-left: 10px;
+			// }
 		}
 
 		.name {
@@ -53,10 +53,10 @@ header {
 
 		}
 
-		@include respond-to("small") {
-			align-items: flex-start;
-			margin-top: 10px;
-		};
+		// @include respond-to("small") {
+		// 	align-items: flex-start;
+		// 	margin-top: 40px;
+		// };
 	}
 
 	.parent {

@@ -5,13 +5,17 @@
 
 .smallMenu {
   display: none;
+  position: absolute;
+  z-index: 10;
 
 
  a {
-  display: block; 
+  display: block;
+  border: 1px solid red;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 1.2rem;
+  width: 100%;
  } 
 
 }
@@ -40,7 +44,6 @@
   
   @include respond-to ("small") {
     display: block;
-    z-index: 10;
   }
 }
 
