@@ -1,21 +1,27 @@
-* {
-  margin: 0;
-  padding: 0; 
-}
+// * {
+//   margin: 0;
+//   padding: 0; 
+// }
 
 .smallMenu {
   display: none;
   position: absolute;
+  left: 0;
+  background-color: $yellow;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
   z-index: 10;
+  padding-top: 80px;
 
 
  a {
   display: block;
-  border: 1px solid red;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-transform: uppercase;
+  // border: 1px solid red;
   font-size: 1.2rem;
-  width: 100%;
+  padding: 40px;
+  text-decoration: none;
  } 
 
 }

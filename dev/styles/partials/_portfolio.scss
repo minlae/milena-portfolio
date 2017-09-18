@@ -8,6 +8,7 @@
 
 	.portfolioContainer{
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row-reverse;
 		justify-content: space-around;
 		// border: 1px solid blue;
@@ -18,6 +19,7 @@
 
 	.portfolioContainerR {
 		display: flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-around;
 		// border: 1px solid blue;
@@ -29,6 +31,10 @@
 			display: flex;
 			flex-direction: column;
 			width: 40%;
+
+			@include respond-to("small") {
+				width: 90%;
+			}
 			// border: 1px solid green;
 
 			h3 {
@@ -38,6 +44,7 @@
 				margin-bottom: 50px;
 				// font-weight: 400;
 			}
+
 			p {
 				font-size: 1.2rem;
 				font-family: $sansSerif;
@@ -52,7 +59,7 @@
 			}
 
 			.portfolioSq {
-				background-color: $yellow;
+				background-color: $hoverGray;
 				width: 60px;
 				height: 60px;
 				border-radius: 40%;
