@@ -1,7 +1,12 @@
-@import "partials/setup";
+@import "partials/mixins";
 @import "partials/variables";
+
+@import "partials/setup";
 @import "partials/global";
 @import "partials/header";
 @import "partials/skills";
 @import "partials/main";
 @import "partials/portfolio";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/hamburger";

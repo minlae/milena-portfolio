@@ -1,34 +1,119 @@
-.headerTop {
-	display: flex;
-	border: 1px solid red;
-}
+header {
+	// display: flex;
+	border-bottom: 2px solid $borders;
 
-.logo {
-	border: 1px solid purple;
-}
 
-.headerNav {
-	display: flex;
-	border: 1px solid blue;
-	list-style-type: none;
-
-	button {
-		border: none;
-		color: $hoverGray;
-		font-family: $sansSerif;
-		font-size: 1rem;
-		background: none;
-
+	.headerTop {
+		display: flex;
+		justify-content: space-between;
 	}
-}
 
-.headerSquare {
-	background-color: $yellow;
-	width: 62px;
-	height: 62px;
-	border-radius: 40%;
-	transform: rotate(30deg);
-	margin-top: 30px;
-	margin-left: 30px;
+	.logo {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 270px;
+
+		// border: 1px solid purple;
+		
+		.headerSquare {
+			background-color: $yellow;
+			width: 80px;
+			height: 80px;
+			border-radius: 40%;
+			transform: rotate(30deg);
+			// margin-top: 8px;
+			// margin-left: 30px;
+
+			span {
+				font-size: 2.3rem;
+				padding-top: 23px;
+				padding-left: 7px;
+				color: white;
+				// font-family: $logoThree;
+				font-family: $logoOne;
+				display: inline-block;
+				transform: rotate(-30deg);
+
+			}
+
+			@include respond-to ("small") {
+			  margin-left: 10px;
+			}
+		}
+
+		.name {
+			font-family: $displayFont;
+			font-size: 1.5rem;
+			color: $mainText;
+
+			@include respond-to ("small") {
+				padding-top: 20px;
+			}
+
+		}
+
+		@include respond-to("small") {
+			align-items: flex-start;
+			margin-top: 10px;
+		};
+	}
+
+	.parent {
+		display: flex;
+		justify-content: flex-start;
+		
+		.text {
+			font-size: 1rem;
+			font-family: $sansSerif;
+			color: $hoverGray;
+			padding-top: 0;
+			width: 100px;
+			height: 100px;
+			text-align: center;
+			position: relative;
+			
+
+			a {
+				padding-top: 0;
+				text-decoration: none;
+				display: inline-block;
+				padding-bottom: 40px;
+				color: $hoverGray;
+				margin-left: 10px;
+				padding-top: 35px;
+				// transition: .5s all;
+
+				&:hover {
+					color: $mainText;
+					font-weight: bold;
+				}
+			}
+
+			.dot {
+				width: 20px;
+				height: 20px;
+				border: 6px solid white;
+				border-radius: 50%;
+				background-color: $gray;
+				position: absolute;
+				top: 90px;
+				left: 50px;
+			}
+
+		}
+
+		// this is what makes the hover magic happen
+		// when you hover over .text, do something to .dot
+		.text:hover .dot {
+			background-color: $yellow;
+			transform: scale(1.2);
+		}
+
+		@include respond-to ("small") {
+		  display: none;
+		}
+	}
+
 }
 
