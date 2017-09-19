@@ -20,7 +20,7 @@
 		}
 
 		@include respond-to("small") {
-			width: 78%;
+			width: 87%;
 		}
 	}
 
@@ -113,12 +113,13 @@
 
 				@include respond-to("medium") {
 					width: 100%;
+					justify-content: flex-start;
 					flex-wrap: wrap;
 				}
 
-				@include respond-to("small") {
-					width: 60%;
-				}
+				// @include respond-to("small") {
+				// 	width: 60%;
+				// }
 			}
 
 			.portfolioSq {
@@ -132,6 +133,7 @@
 
 				@include respond-to("medium") {
 					margin-top: 10px;
+					margin-left: 10px;
 				}
 				span {
 					position: absolute;
@@ -176,6 +178,12 @@
 				transition: all 0.5s;
 				padding-top: 12px;
 				text-align: center;
+				transition: all 1s;
+
+				&:hover {
+					background-color: $mainText;
+					color: white;
+				}
 			}
 		}
 		

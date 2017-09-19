@@ -8,16 +8,16 @@
   }
 
   @else if $breakpoint == "medium" {
-    @media (max-width: 900px) {
+    @media (max-width: 768px) {
       @content;
     }
   }
 
-  // @else if $breakpoint == "large" {
-  //   @media (min-width: 769px) {
-  //     @content;
-  //   }
-  // }
+  @else if $breakpoint == "large" {
+    @media (min-width: 769px) {
+      @content;
+    }
+  }
 
   @else if $breakpoint == "xlarge" {
     @media (min-width: 1500px) {
