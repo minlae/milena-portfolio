@@ -39,6 +39,10 @@ h3 {
 }
 
 .wrapper {
+	@include respond-to("xlarge") {
+		max-width: 1500px;
+	}
+
 	max-width: 1000px;
 	margin: 0 auto;
 	// border: 1px solid black;

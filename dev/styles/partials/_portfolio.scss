@@ -6,6 +6,10 @@
 	padding-bottom: 60px;
 	
 	.buttonContainer {
+
+		@include respond-to("xlarge") {
+			width: 49%;
+		};
 		display: flex;
 		width: 75%;
 		justify-content: space-between;
@@ -81,6 +85,9 @@
 			}
 			
 			.sqContainer {
+				@include respond-to("xlarge") {
+					width: 39%;
+				};
 				display: flex;
 				justify-content: space-between;
 				width: 60%;
@@ -96,6 +103,9 @@
 			}
 
 			.sqContainerLarge {
+				@include respond-to("xlarge") {
+					width: 90%;
+				}
 				display: flex;
 				justify-content: space-between;
 				width: 114%;
@@ -118,18 +128,37 @@
 				height: 60px;
 				border-radius: 40%;
 				transform: rotate(30deg);
+				position: relative;
 
 				@include respond-to("medium") {
 					margin-top: 10px;
 				}
-
 				span {
-					font-size: 1rem;
-					color: white;
+					position: absolute;
+					text-transform: uppercase;
+					// letter-spacing: 0.5em;
+					top: 23px;
+					left: 14px;
+					font-size: 0.7rem;
+					// color: white;
+					color: $mainText;
 					display: inline-block;
 					transform: rotate(-30deg);
-					padding-top: 23px;
-					padding-left: 5px;
+					// padding-top: 23px;
+					// padding-left: 5px;
+				}
+
+				.js {
+					// position: absolute;
+					left: -3px;
+				}
+
+				.jquery {
+					left: 6px;
+				}
+
+				.firebase {
+					left: 2px;
 				}
 			}
 

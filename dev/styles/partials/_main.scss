@@ -2,11 +2,7 @@
 	margin-top: 60px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-
-	@include respond-to("medium") {
-		justify-content: space-around;
-	}
+	justify-content: space-around;
 
 	@include respond-to("small") {
 		justify-content: center;
