@@ -70,6 +70,7 @@
 				margin-top: 46px;
 				margin-left: 44px;
 
+
 				@include respond-to("medium") {
 					margin-top: 37px;
 					margin-left: 36px;
@@ -80,7 +81,14 @@
 					margin-left: 23px;
 					font-size: 2rem;
 				}
+
 			}	
+
+			a:hover .fa {
+				color: $yellowDark;
+				transform: scale(1.2);
+				transform: rotate(-30deg);
+			}
 
 			// &:before {
 			// 	content:"";

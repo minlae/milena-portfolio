@@ -20,6 +20,13 @@
 
 	a {
 		text-decoration: none;
+		transition: all 0.5s;
+
+		&:hover {
+			color: $yellow;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+		}
 	}
 
 	.contactInfo {
