@@ -128,12 +128,12 @@
 			}
 
 			.portfolioSq {
-				background-color: $hoverGray;
-				background-color: $yellow;
+				// background-color: $hoverGray;
+				// background-color: $yellow;
 				width: 60px;
 				height: 60px;
 				border-radius: 40%;
-				transform: rotate(30deg);
+				// transform: rotate(30deg);
 				position: relative;
 
 				@include respond-to("medium") {
@@ -141,16 +141,16 @@
 					margin-left: 10px;
 				}
 				span {
-					position: absolute;
+					// position: absolute;
 					text-transform: uppercase;
 					// letter-spacing: 0.5em;
 					top: 23px;
 					left: 14px;
-					font-size: 0.7rem;
+					font-size: 0.8rem;
 					// color: white;
 					color: $mainText;
 					display: inline-block;
-					transform: rotate(-30deg);
+					// transform: rotate(-30deg);
 					// padding-top: 23px;
 					// padding-left: 5px;
 				}
@@ -183,7 +183,7 @@
 				transition: all 0.5s;
 				padding-top: 12px;
 				text-align: center;
-				transition: all 1s;
+				transition: all 0.7s;
 
 				&:hover {
 					background-color: $mainText;
@@ -193,7 +193,7 @@
 		}
 		
 		.portfolioCl {
-			border-radius: 50%;
+			// border-radius: 50%;
 			width: 400px;
 			height: 400px;
 			// background-image: url("../../assets/responsive_proj.png")

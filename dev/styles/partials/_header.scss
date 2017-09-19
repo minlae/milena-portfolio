@@ -18,22 +18,22 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 270px;
+		width: 227px;
 
 		// border: 1px solid purple;
 		
 		.headerSquare {
 			background-color: $yellow;
-			width: 80px;
-			height: 80px;
+			width: 55px;
+			height: 55px;
 			border-radius: 40%;
 			transform: rotate(30deg);
 			// margin-top: 8px;
 			// margin-left: 30px;
 
 			span {
-				font-size: 2.3rem;
-				padding-top: 23px;
+				font-size: 1.3rem;
+				padding-top: 20px;
 				padding-left: 7px;
 				color: white;
 				// font-family: $logoThree;

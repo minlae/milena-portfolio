@@ -40,9 +40,9 @@
 		.innerCircle {
 			min-width: 150px;
 			min-height: 150px;
-			transform: rotate(30deg);
-			border-radius: 40%;
-			border: 2px solid $yellow;
+			// transform: rotate(30deg);
+			border-radius: 50%;
+			// border: 2px solid $yellow;
 			background-color: white;
 			position: absolute;
 			top: 63%;
@@ -65,7 +65,7 @@
 
 			.fa {
 				color: $yellow;
-				transform: rotate(-30deg);
+				// transform: rotate(-30deg);
 				font-size: 3.5rem;
 				margin-top: 46px;
 				margin-left: 44px;
@@ -87,7 +87,7 @@
 			a:hover .fa {
 				color: $yellowDark;
 				transform: scale(1.2);
-				transform: rotate(-30deg);
+				// transform: rotate(-30deg);
 			}
 
 			// &:before {
@@ -127,7 +127,7 @@
 			}
 			font-size: 1.2rem;
 			font-family: $sansSerif;
-			line-height: 140%;
+			line-height: 159%;
 		}
 
 		.mainButton {
