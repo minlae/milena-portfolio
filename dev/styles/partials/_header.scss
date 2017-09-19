@@ -1,6 +1,6 @@
 header {
 	// display: flex;
-	border-bottom: 2px solid $borders;
+	border-bottom: 1px solid $borders;
 	// position: fixed;
 	// z-index: 11;
 
@@ -42,26 +42,26 @@ header {
 				transform: rotate(-30deg);
 
 				@include respond-to("medium") {
-					font-size: 2rem;
-					padding-top: 20px;
+					// font-size: 2rem;
+					// padding-top: 20px;
 				}
 
 				@include respond-to("small") {
-					font-size: 1.8rem;
-					padding-top: 21px;
+					// font-size: 1.8rem;
+					// padding-top: 21px;
 				}
 
 			}
 
-			@include respond-to("medium") {
-				width: 70px;
-				height: 70px;
-			}
+			// @include respond-to("medium") {
+			// 	// width: 70px;
+			// 	// height: 70px;
+			// }
 
-			@include respond-to("small") {
-				width: 70px;
-				height: 70px;
-			}
+			// @include respond-to("small") {
+			// 	// width: 70px;
+			// 	// height: 70px;
+			// }
 
 		}
 		

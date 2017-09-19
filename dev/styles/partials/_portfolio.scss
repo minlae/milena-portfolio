@@ -95,7 +95,7 @@
 				};
 				display: flex;
 				justify-content: space-between;
-				width: 60%;
+				width: 50%;
 				margin-top: 7px;
 
 				@include respond-to("medium") {
@@ -129,23 +129,23 @@
 
 			.portfolioSq {
 				// background-color: $hoverGray;
-				// background-color: $yellow;
-				width: 60px;
-				height: 60px;
-				border-radius: 40%;
-				// transform: rotate(30deg);
-				position: relative;
+				// // background-color: $yellow;
+				// width: 60px;
+				// height: 60px;
+				// border-radius: 40%;
+				// // transform: rotate(30deg);
+				// position: relative;
 
-				@include respond-to("medium") {
-					margin-top: 10px;
-					margin-left: 10px;
-				}
+				// @include respond-to("medium") {
+				// 	margin-top: 10px;
+				// 	margin-left: 10px;
+				// }
 				span {
 					// position: absolute;
 					text-transform: uppercase;
 					// letter-spacing: 0.5em;
-					top: 23px;
-					left: 14px;
+					// top: 23px;
+					// left: 14px;
 					font-size: 0.8rem;
 					// color: white;
 					color: $mainText;
@@ -155,18 +155,18 @@
 					// padding-left: 5px;
 				}
 
-				.js {
-					// position: absolute;
-					left: -3px;
-				}
+				// .js {
+				// 	// position: absolute;
+				// 	left: -3px;
+				// }
 
-				.jquery {
-					left: 6px;
-				}
+				// .jquery {
+				// 	left: 6px;
+				// }
 
-				.firebase {
-					left: 2px;
-				}
+				// .firebase {
+				// 	left: 2px;
+				// }
 			}
 
 			.portfolioButton {
@@ -206,7 +206,7 @@
 		}
 
 		.clPdf {
-			background-image: url("../../assets/responsive_proj.png");
+			background-image: url("../../assets/responsive_proj2.png");
 		}
 
 		.clBooksMovies {
