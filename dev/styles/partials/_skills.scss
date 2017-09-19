@@ -15,11 +15,12 @@
 	
 	.skContainer {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		// flex-direction: column;
 		// justify-content: space-between;
 		// margin: 0 auto;
-		width: 800px;
-		min-height: 250px;
+		width: 100%;
+		// min-height: 250px;
 		// border: 1px solid red;
 		// flex-wrap: wrap;
 		
@@ -39,8 +40,8 @@
 		.skillsSquare {
 			position: relative;
 			background-color: $yellow;
-			min-width: 100px;
-			min-height: 100px;
+			width: 80px;
+			height: 80px;
 			margin: 20px;
 			border-radius: 40%;
 			transform: rotate(30deg);
@@ -56,10 +57,10 @@
 				fill: white;
 				position: absolute;
 				transform: rotate(-30deg);
-				left: 20px;
-				top: 20px;
-				width: 60px;
-				height: 60px;
+				left: 15px;
+				top: 13px;
+				width: 48px;
+				height: 48px;
 				display: block;
 
 				@include respond-to("small") {
