@@ -4,10 +4,17 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
+	@include respond-to("small") {
+		justify-content: center;
+	}
+
 	p {
 		font: $sansSerif;
 		font-size: 1.2rem;
 		font-weight: 300;
+		@include respond-to("small") {
+			text-align: center;
+		}
 	}
 	.outerCircle {
 		position: relative;
@@ -17,6 +24,12 @@
 		background-image: url("../../assets/profile_pam_lau_sm.jpg");
 		background-repeat: no-repeat;
 		background-position: 10% 10%;
+
+		@include respond-to("small") {
+			min-width: 400px;
+			min-height: 400px;
+
+		}
 		
 		.innerCircle {
 			min-width: 150px;
@@ -30,12 +43,23 @@
 			left: 72%;
 			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 			
+			@include respond-to("small") {
+				min-width: 120px;
+				min-height: 120px;
+				top: 71%;
+			}
+
 			.fa {
 				color: $yellow;
 				transform: rotate(-30deg);
 				font-size: 3.5rem;
 				margin-top: 46px;
 				margin-left: 44px;
+
+				@include respond-to ("small") {
+					margin-top: 25px;
+					margin-left: 26px;
+				}
 			}	
 
 			// &:before {
@@ -58,6 +82,11 @@
 
 		@include respond-to("small") {
 			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding-right: 10px;
+			padding-left: 10px;
 		}
 
 		p {
@@ -77,6 +106,10 @@
 			border: none;
 			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 			transition: all 0.5s;
+
+			@include respond-to("small") {
+
+			}
 
 			&:hover {
 				background-color: $yellowDark;

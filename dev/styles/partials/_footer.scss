@@ -1,11 +1,31 @@
 footer {
 	border-top: 2px solid $borders;
+	position: relative;
+	// padding-top: 40px;
+	// padding-bottom: 40px;
 
 	p {
+		background-color: $gray;
+		width: 168px;
+		border-radius: 40px;
 		text-align: center;
-		margin-top: 2px;
-		margin-bottom: 2px;
-		font-size: 1rem;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		font-size: 0.7rem;
+		position: absolute;
+		top: -23px;
+		left: 50%;
+		transform: translatex(-50%);
+		// left: 550px;
+		// margin-top: 2px;
+		margin-bottom: 10px;
+		// font-size: 1rem;
 		font-family: $sansSerif;
+
+		@include respond-to("small") {
+			top:-23px;
+			// left: 50%;
+			// transform: translatex(-50%);
+		}
 	}
 }

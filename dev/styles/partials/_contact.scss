@@ -1,21 +1,30 @@
 .contact {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: $mainText;
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-color: $bgGray;
 	
 	h2 {
-		color: white;
+		color: $mainText;
 	}
 
-	p {
-		color: white;
+	p, a {
+		display: block;
+		color: $mainText;
 		font-family: $sansSerif;
 		font-size: 1.2rem;
 		text-align: center;
+		margin-top: 20px;
+
+	}
+
+	a {
+		text-decoration: none;
 	}
 
 	.contactInfo {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
+		align-items: center;
 	}
 }

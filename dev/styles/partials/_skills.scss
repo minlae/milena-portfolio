@@ -15,12 +15,22 @@
 	
 	.skContainer {
 		display: flex;
-		justify-content: space-between;
-		margin: 0 auto;
-		width: 90%;
+		flex-direction: column;
+		// justify-content: space-between;
+		// margin: 0 auto;
+		width: 800px;
 		min-height: 250px;
-		// border: 1px solid black;
-		flex-wrap: wrap;
+		// border: 1px solid red;
+		// flex-wrap: wrap;
+		
+		.rowOne {
+			// border: 1px solid blue;
+			display: flex;
+			justify-content: space-around;
+			padding-bottom: 20px;
+			padding-top: 20px;
+
+		}
 
 		@include respond-to("small") {
 			width: 100%;
