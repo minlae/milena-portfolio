@@ -112,12 +112,20 @@
 		}
 
 		p {
+			@include respond-to("xlarge") {
+				font-size: 1.5rem;
+			}
 			font-size: 1.2rem;
 			font-family: $sansSerif;
 			line-height: 140%;
 		}
 
 		.mainButton {
+			@include respond-to("xlarge") {
+				font-size: 1.5rem;
+				width: 175px;
+				height: 57px;
+			}
 			background-color: $yellow;
 			margin-top: 20px;
 			font-size: 1.2rem;
