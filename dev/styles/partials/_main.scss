@@ -31,8 +31,9 @@
 		}
 
 		@include respond-to("small") {
-			min-width: 400px;
-			min-height: 400px;
+			min-width: 250px;
+			min-height: 250px;
+			background-size: 100%;
 
 		}
 		
@@ -56,10 +57,10 @@
 			}
 			
 			@include respond-to("small") {
-				min-width: 120px;
-				min-height: 120px;
-				top: 71%;
-				left: 72%;
+				min-width: 85px;
+				min-height: 85px;
+				top: 70%;
+				left: 63%;
 			}
 
 			.fa {
@@ -76,7 +77,8 @@
 
 				@include respond-to ("small") {
 					margin-top: 25px;
-					margin-left: 26px;
+					margin-left: 23px;
+					font-size: 2rem;
 				}
 			}	
 

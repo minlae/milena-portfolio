@@ -19,7 +19,6 @@ h1 {
 
 	@include respond-to("small") {
 		text-align: center;
-		font-size: 3.3rem;
 	}
 }
 

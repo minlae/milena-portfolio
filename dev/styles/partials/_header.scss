@@ -8,6 +8,10 @@ header {
 	.headerTop {
 		display: flex;
 		justify-content: space-between;
+
+		@include respond-to("small") {
+			justify-content: center;
+		}
 	}
 
 	.logo {
@@ -43,8 +47,8 @@ header {
 				}
 
 				@include respond-to("small") {
-					font-size: 2.3rem;
-					padding-top: 23px;
+					font-size: 1.8rem;
+					padding-top: 21px;
 				}
 
 			}
@@ -55,8 +59,8 @@ header {
 			}
 
 			@include respond-to("small") {
-				width: 80px;
-				height: 80px;
+				width: 70px;
+				height: 70px;
 			}
 
 		}
@@ -72,7 +76,7 @@ header {
 			}
 
 			@include respond-to("small") {
-				font-size: 1.5rem;
+				display: none;
 			}
 
 
@@ -84,14 +88,15 @@ header {
 		}
 		
 		@include respond-to ("small") {
-			width: 270px;
-			padding-left: 20px;
+			width: 245px;
+			// padding-left: 20px;
 		}
 
 		// @include respond-to("small") {
 		// 	align-items: flex-start;
 		// 	margin-top: 40px;
 		// };
+
 	}
 
 	.parent {

@@ -47,6 +47,11 @@
 			// margin-top: 30px;
 			// margin-left: 30px;
 
+			@include respond-to("small") {
+				min-width: 80px;
+				min-height: 80px;
+			}
+
 			.devIcon {
 				fill: white;
 				position: absolute;

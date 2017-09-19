@@ -82,6 +82,11 @@
 				line-height: 1.5;
 				font-family: $sansSerif;
 				font-weight: 300;
+				margin-top: 0;
+
+				@include respond-to("small") {
+					font-size: 1rem;
+				}
 			}
 			
 			.sqContainer {
@@ -193,7 +198,9 @@
 			height: 400px;
 			// background-image: url("../../assets/responsive_proj.png")
 			@include respond-to("small") {
-				margin-bottom: 30px;
+				margin-bottom: 20px;
+				width: 300px;
+				height: 300px;
 			}
 
 		}
