@@ -35,6 +35,26 @@ header {
 				display: inline-block;
 				transform: rotate(-30deg);
 
+				@include respond-to("medium") {
+					font-size: 2rem;
+					padding-top: 20px;
+				}
+
+				@include respond-to("small") {
+					font-size: 2.3rem;
+					padding-top: 23px;
+				}
+
+			}
+
+			@include respond-to("medium") {
+				width: 70px;
+				height: 70px;
+			}
+
+			@include respond-to("small") {
+				width: 80px;
+				height: 80px;
 			}
 
 		}
@@ -45,10 +65,24 @@ header {
 			font-size: 1.5rem;
 			color: $mainText;
 
+			@include respond-to("medium") {
+				font-size: 1.1rem;
+			}
 
+			@include respond-to("small") {
+				font-size: 1.5rem;
+			}
+
+
+		}
+
+		@include respond-to("medium") {
+			width: 210px;
+			padding-left: 10px;
 		}
 		
 		@include respond-to ("small") {
+			width: 270px;
 			padding-left: 20px;
 		}
 

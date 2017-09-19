@@ -4,6 +4,10 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
+	@include respond-to("medium") {
+		justify-content: space-around;
+	}
+
 	@include respond-to("small") {
 		justify-content: center;
 	}
@@ -25,6 +29,11 @@
 		background-repeat: no-repeat;
 		background-position: 10% 10%;
 
+		@include respond-to("medium") {
+			min-width: 380px;
+			min-height: 380px;
+		}
+
 		@include respond-to("small") {
 			min-width: 400px;
 			min-height: 400px;
@@ -42,11 +51,19 @@
 			top: 63%;
 			left: 72%;
 			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+			@include respond-to("medium") {
+				min-width: 132px;
+				min-height: 132px;
+				top: 73%;
+				left: 65%;
+			}
 			
 			@include respond-to("small") {
 				min-width: 120px;
 				min-height: 120px;
 				top: 71%;
+				left: 72%;
 			}
 
 			.fa {
@@ -55,6 +72,11 @@
 				font-size: 3.5rem;
 				margin-top: 46px;
 				margin-left: 44px;
+
+				@include respond-to("medium") {
+					margin-top: 37px;
+					margin-left: 36px;
+				}
 
 				@include respond-to ("small") {
 					margin-top: 25px;
@@ -79,6 +101,10 @@
 
 	.mainText {
 		width: 40%;
+
+		@include respond-to("medium") {
+			width: 44%;
+		}
 
 		@include respond-to("small") {
 			width: 100%;
