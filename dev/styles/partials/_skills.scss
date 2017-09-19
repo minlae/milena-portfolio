@@ -61,6 +61,13 @@
 				width: 60px;
 				height: 60px;
 				display: block;
+
+				@include respond-to("small") {
+					width: 48px;
+					height: 48px;
+					left: 17px;
+					top: 16px;
+				}
 			}
 
 			p {
