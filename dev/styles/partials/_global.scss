@@ -48,9 +48,17 @@ h3 {
 	margin: 0 auto;
 	// border: 1px solid black;
 
-	@include respond-to("large") {
-		max-width: 900px;
-	}
+	// @include respond-to("large") {
+	// 	max-width: 900px;
+	// }
+
+	// @include respond-to("medium") {
+	// 	max-width: 768px;
+	// }
+
+	// @include respond-to("small") {
+	// 	max-width: 600px;
+	// }
 }
 
 .styledSquare {
