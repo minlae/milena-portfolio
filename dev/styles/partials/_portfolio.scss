@@ -46,7 +46,7 @@
 		}
 
 		@include respond-to("small") {
-			width: 87%;
+			width: 50%;
 		}
 	}
 
@@ -139,7 +139,7 @@
 				}
 
 				@include respond-to("small") {
-					width: 60%;
+					width: 40%;
 				}
 			}
 

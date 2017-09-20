@@ -3,18 +3,16 @@ $(document).ready(function(){
 		console.log(this);
 		$(this).toggleClass("open");
 		const smallMenu = $(".smallMenu");
-		const test = this;
+		// const test = this;
 
 		smallMenu.slideToggle(300);		
-		
-		$("#aboutLink").click(function() {
-			// console.log(test);	
-			// HELP: This works the FIRST time you click "About" but then afterward it does something weird.
-			$(test).toggleClass("open");
-			smallMenu.slideToggle(300);	
-		})
+			
 	});
 
+	$("#aboutLink").click(function() {
+
+		$(".smallMenu").slideToggle(300);
+	});
 
 	function goToByScroll(id) {
 		let toMe = $("." + id)
@@ -33,16 +31,27 @@ $(document).ready(function(){
 		goToByScroll("skills");
 	});
 
-	$("#navPortfolio").on("click", function() {
-		goToByScroll("portfolio");
+	$("#skillsSm").on("click", function() {
+		goToByScroll("skills");
+		$(".smallMenu").slideToggle(300);
 	});
 
 	$("#navPortfolio").on("click", function() {
 		goToByScroll("portfolio");
+	});
+
+	$("#portfolioSm").on("click", function() {
+		goToByScroll("portfolio");
+		$(".smallMenu").slideToggle(300);
 	});
 
 	$("#navContact").on("click", function() {
 		goToByScroll("contact");
+	});
+
+	$("#contactSm").on("click", function() {
+		goToByScroll("contact");
+		$(".smallMenu").slideToggle(300);
 	});
 
 });
