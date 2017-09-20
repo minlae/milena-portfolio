@@ -6,12 +6,16 @@
 	// border: 1px solid blue;
 	margin-top: 110px;
 	margin-bottom: 0;
-	padding-bottom: 35px;
-	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-top: 15px;
 	background-color: rgba(245,245,245,0.7);
 	// background-image: url("../../assets/climpek.png");
 	// note: maybe bg needs an opacity. Make it more subtle.
 	background-repeat: repeat;
+	
+	h2 {
+		margin-bottom: 11px;
+	}
 	
 	.skContainer {
 		display: flex;

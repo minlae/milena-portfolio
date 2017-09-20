@@ -15,9 +15,13 @@
 		img {
 			max-width: 100%;
 		}
-		@include respond-to("medium") {
+
+		@include respond-to("large") {
 			max-width: 50%;
 		}
+		// @include respond-to("medium") {
+		// 	max-width: 50%;
+		// }
 	}
 
 	.buttonContainer {
@@ -43,10 +47,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row-reverse;
-		justify-content: space-around;
+		justify-content: space-between;
 		// border: 1px solid blue;
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 100px;
 		
 		@include respond-to("medium") {
 			align-items: center;
@@ -64,10 +68,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: space-around;
+		justify-content: space-between;
 		// border: 1px solid blue;
 		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-bottom: 100px;
 
 		@include respond-to("medium") {
 			align-items: center;
@@ -141,7 +145,7 @@
 				width: 114%;
 				margin-top: 7px;
 
-				@include respond-to("medium") {
+				@include respond-to("large") {
 					width: 100%;
 					flex-wrap: wrap;
 				}
@@ -238,22 +242,6 @@
 				height: 280px;
 			}
 
-		}
-
-		.clPdf {
-			background-image: url("../../assets/responsive_proj2.png");
-		}
-
-		.clBooksMovies {
-			background-image: url("../../assets/books_movies.jpg");
-		}
-
-		.clRecList {
-			background-image: url("../../assets/rec_lists.jpg");	
-		}
-
-		.clDragon {
-			background-image: url("../../assets/dragon_slayer.jpg")
 		}
 }
 
