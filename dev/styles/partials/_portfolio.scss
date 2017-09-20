@@ -2,9 +2,21 @@
 	// background-image: url("../../assets/yellow3.png");
 	// background-color: $yellow;
 	// padding: 20px;
-	padding-top: 50px;
+	// padding-top: 50px;
+	padding-top: 100px;
 	padding-bottom: 60px;
+
+	@include respond-to("small") {
+		padding-top: 70px;
+	}
 	
+	.portfolioImage {
+		max-width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+
 	.buttonContainer {
 
 		@include respond-to("xlarge") {
@@ -36,6 +48,7 @@
 		@include respond-to("small") {
 			flex-direction: column-reverse;
 			align-items: center;
+			padding-top: 40px;
 		}
 
 	}
@@ -52,6 +65,7 @@
 		@include respond-to("small") {
 			flex-direction: column-reverse;
 			align-items: center;
+			padding-top: 40px;
 		}
 	}
 

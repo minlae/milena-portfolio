@@ -22,10 +22,14 @@
 		text-decoration: none;
 		transition: all 0.5s;
 
+		.fa {
+			margin-right: 6px;
+			font-size: 1.5rem;
+		}
+
 		&:hover {
 			color: $yellow;
-			font-weight: bold;
-			letter-spacing: 0.1em;
+			transform: scale(1.2);
 		}
 	}
 
