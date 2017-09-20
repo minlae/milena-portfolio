@@ -176,7 +176,7 @@
 		
 		.mainEmailLink {
 			@include respond-to("xlarge") {
-				width: 175px;
+				width: 182px;
 				height: 57px;
 			}
 			text-decoration: none;
@@ -227,8 +227,8 @@
 			display: inline-block;
 			color: $yellow;
 			font-size: 1.2rem;
-			padding-top: 15px;
-			padding-left: 20px;
+			padding-top: 12px;
+			padding-left: 13px;
 			// background-color: $yellow;
 			transition: all 0.5s;
 
