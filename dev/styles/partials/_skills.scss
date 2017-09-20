@@ -63,10 +63,10 @@
 	.skillsSquare {
 		position: relative;
 		background-color: $yellow;
-		width: 80px;
-		height: 80px;
+		width: 90px;
+		height: 90px;
 		margin: 20px;
-		border-radius: 40%;
+		border-radius: 50%;
 		transform: rotate(30deg);
 		// margin-top: 30px;
 		// margin-left: 30px;
@@ -80,8 +80,8 @@
 			fill: white;
 			position: absolute;
 			transform: rotate(-30deg);
-			left: 15px;
-			top: 13px;
+			left: 20px;
+			top: 20px;
 			width: 48px;
 			height: 48px;
 			display: block;
