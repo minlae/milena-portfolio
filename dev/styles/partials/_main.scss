@@ -176,7 +176,6 @@
 		
 		.mainEmailLink {
 			@include respond-to("xlarge") {
-				font-size: 1.5rem;
 				width: 175px;
 				height: 57px;
 			}
@@ -209,6 +208,9 @@
 		}
 
 		.mainButtonContainer {
+			@include respond-to("xlarge") {
+				width: 66%;
+			}
 			display: flex;
 			justify-content: space-between;
 			width: 82%;
@@ -218,6 +220,9 @@
 			}
 		}
 		.emailMain {
+			@include respond-to("xlarge") {
+				font-size: 1.5rem;
+			}
 			text-decoration: none;
 			display: inline-block;
 			color: $yellow;
