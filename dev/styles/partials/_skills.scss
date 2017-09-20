@@ -6,8 +6,8 @@
 	// border: 1px solid blue;
 	margin-top: 100px;
 	margin-bottom: 0;
-	padding-bottom: 60px;
-	padding-top: 50px;
+	padding-bottom: 35px;
+	padding-top: 30px;
 	background-color: rgba(245,245,245,0.7);
 	// background-image: url("../../assets/climpek.png");
 	// note: maybe bg needs an opacity. Make it more subtle.
@@ -17,66 +17,104 @@
 		display: flex;
 		flex-wrap: wrap;
 		// flex-direction: column;
-		// justify-content: space-between;
+		justify-content: center;
 		// margin: 0 auto;
 		width: 100%;
 		// min-height: 250px;
 		// border: 1px solid red;
 		// flex-wrap: wrap;
 		
-		.rowOne {
+		@include respond-to("small") {
+			display: none;
+		}
+
+
+		.row {
 			// border: 1px solid blue;
 			display: flex;
 			justify-content: space-around;
-			padding-bottom: 20px;
-			padding-top: 20px;
+			margin-left: 40px;
+			// padding-bottom: 20px;
+			// padding-top: 20px;
 
+			@include respond-to("xlarge") {
+				margin-left: 0px;
+			}
+		}
+
+		.rowTwo {
+			display: flex;
+			// align-self: flex-end;
+			margin-left: -40px;
+			// border: 1px solid red;
+
+			@include respond-to("xlarge") {
+				margin-left: 0px;
+			}
 		}
 
 		@include respond-to("small") {
 			width: 100%;
 		};
 
-		.skillsSquare {
-			position: relative;
-			background-color: $yellow;
-			width: 80px;
-			height: 80px;
-			margin: 20px;
-			border-radius: 40%;
-			transform: rotate(30deg);
-			// margin-top: 30px;
-			// margin-left: 30px;
+		
+	}
+
+	.skillsSquare {
+		position: relative;
+		background-color: $yellow;
+		width: 80px;
+		height: 80px;
+		margin: 20px;
+		border-radius: 40%;
+		transform: rotate(30deg);
+		// margin-top: 30px;
+		// margin-left: 30px;
+
+		@include respond-to("small") {
+			min-width: 80px;
+			min-height: 80px;
+		}
+		
+		.devIcon {
+			fill: white;
+			position: absolute;
+			transform: rotate(-30deg);
+			left: 15px;
+			top: 13px;
+			width: 48px;
+			height: 48px;
+			display: block;
 
 			@include respond-to("small") {
-				min-width: 80px;
-				min-height: 80px;
-			}
-
-			.devIcon {
-				fill: white;
-				position: absolute;
-				transform: rotate(-30deg);
-				left: 15px;
-				top: 13px;
 				width: 48px;
 				height: 48px;
-				display: block;
-
-				@include respond-to("small") {
-					width: 48px;
-					height: 48px;
-					left: 17px;
-					top: 16px;
-				}
+				left: 17px;
+				top: 16px;
 			}
+		}
 
-			p {
-				transform: rotate(-30deg);
-				position: absolute;
-				top: 40px;
+		p {
+			transform: rotate(-30deg);
+			position: absolute;
+			top: 40px;
+		}
+
+
+	}
+
+	.skContainerSmall {
+		display: none;
+
+		@include respond-to("small") {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		
+		.git {
+			@include respond-to("small") {
+				display: none;
 			}
-
 		}
 	}
 

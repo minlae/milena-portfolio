@@ -118,7 +118,6 @@
 
 				@include respond-to("medium") {
 					width: 100%;
-					justify-content: flex-start;
 					flex-wrap: wrap;
 				}
 
@@ -222,25 +221,3 @@
 		}
 }
 
-// sad, have to get rid of my fancy square image:
-		// .portfolioSq {
-		// 	background-color: $gray;
-		// 	position: relative;
-		// 	overflow: hidden;
-		// 	min-width: 390px;
-		// 	min-height: 390px;
-		// 	border-radius: 40%;
-		// 	transform: rotate(30deg);
-		// 	margin-top: 30px;
-		// 	margin-left: 30px;
-		// 	&:before {
-		// 		content:"";
-		// 		position: absolute;
-		// 		width: 200%;
-		// 		height: 200%;
-		// 		top: -50%;
-		// 		left: 3%;
-		// 		background: url("../../assets/responsive_proj.png") 0 0 no-repeat;
-		// 		transform: rotate(-30deg);
-		// 	}
-		// }
