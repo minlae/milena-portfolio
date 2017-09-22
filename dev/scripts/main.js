@@ -23,6 +23,10 @@ $(document).ready(function(){
 		}, 500);
 	};
 
+	$("#navAbout").on("click", function() {
+		goToByScroll("about");
+	});
+
 	$("#mainButton").on("click", function() {
 		goToByScroll("portfolio");
 	});

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Milena Djokic</title>
 	<link href="https://fonts.googleapis.com/css?family=Prompt:300|Macondo|Lato:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -32,7 +33,7 @@
 					</div>
 					<div class="parent">
 						<div class="text">
-							<a href="#">About</a>
+							<a id="navAbout" href="#">About</a>
 							<div class="dot"></div>
 						</div>
 						<div class="text">
@@ -53,20 +54,20 @@
 		</div>
 	</header>
 
-	<section id="about" class="main wrapper">
+	<section id="main" class="main wrapper">
 		<div class="outerCircle">
 			<div class="innerCircle">
-				<a href="mailto:milena.djokic@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+				<a href="assets/milena_djokic_resume.pdf" target="_blank"><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
 			</div>
 		</div>
 		<div class="mainText">
 			<h1>Hi, I'm Milena</h1>
-			<p>I'm a front-end developer from Toronto. I'm commited to writing clean, organized code for pixel perfect websites.</p>
+			<p>I'm a front-end web developer from Toronto commited to writing clean, organized code for pixel perfect websites.</p>
 			<div class="mainButtonContainer">
 				<button id="mainButton" class="mainButton">see my work</button>
-				<div class="mainEmailLink">
+				<!-- <div class="mainEmailLink"> -->
 					<a href="mailto:milena.djokic@gmail.com" class="emailMain"><i class="fa fa-envelope" aria-hidden="true"></i> contact me</a>
-				</div>
+				<!-- </div> -->
 			</div>
 		</div>
 	</section>
@@ -74,7 +75,7 @@
 	<section id="skills" class="skills">
 		<div class="wrapper">
 		<h2>Skills</h2>
-			<div class="skContainer">
+			<div class="skContainer wow flipInX">
 				<div class="row">
 					<div class="skillsSquare">
 						<svg class="devIcon" viewBox="0 0 128 128">
@@ -207,7 +208,7 @@
 					</div>
 				</div>
 				<!-- <div class="portfolioCl clPdf"></div> -->
-				<div class="portfolioImage"><img src="assets/startupz.png" alt=""></div>
+				<div class="portfolioImage wow fadeInLeft"><img src="assets/startupz.png" alt=""></div>
 			</div>
 			<div class="portfolioContainerR">
 				<div class="portfolioText">
@@ -240,7 +241,7 @@
 					</div>
 				</div>
 				<!-- <div class="portfolioCl clBooksMovies"></div> -->
-				<div class="portfolioImage"><img src="assets/books_movies_display.png" alt=""></div>
+				<div class="portfolioImage wow fadeInRight" data-wow-delay=".3s"><img src="assets/books_movies_display.png" alt=""></div>
 
 			</div>
 			<div class="portfolioContainer">
@@ -273,7 +274,7 @@
 					</div>
 				</div>
 				<!-- <div class="portfolioCl clRecList"></div> -->
-				<div class="portfolioImage"><img src="assets/rec_list_display.png" alt=""></div>
+				<div class="portfolioImage wow fadeInLeft" data-wow-delay=".3s"><img src="assets/rec_list_display.png" alt=""></div>
 			</div>
 			<div class="portfolioContainerR">
 				<div class="portfolioText">
@@ -304,15 +305,26 @@
 						<a class="portfolioButton" href="https://github.com/minlae/project3" target="_blank">View on Github</a>
 					</div>
 				</div>
-				<!-- <div class="portfolioCl clDragon"></div> -->
-				<div class="portfolioImage"><img src="assets/dragon_display.png" alt=""></div>
+				<div class="portfolioImage wow fadeInRight" data-wow-delay=".3s"><img src="assets/dragon_display.png" alt=""></div>
 			</div>
 		</div>
 	</section>
+	<section id="about" class="about">
+			<h2>About Me</h2>
+		<div class="wrapper aboutContainer">
+			<div class="aboutPic"></div>
+			<div class="aboutText">
+				<p>I am a front-end web developer and recent graduate of the HackerYou intensive bootcamp. I have a keen eye for detail and excellent communication and organizational skills. While I am an independent learner, I am happiest working on a team and can keep the spirits high through difficult projects and impending deadlines.</p>
 
+				<p>I have a passion for clean, efficient code and fast, optimized and accessible websites. I have been coding in Sublime using JavaScript(ES6), jQuery and other JavaScript libraries, React, Git, GitHub, Gulp, Firebase, and RESTful APIs (AJAX), as well as  HTML5, Sass/SCSS.</p>
+
+				<p>When away from a computer, I can be found in a fencing salle or hiking through one of Toronto’s beautiful parks. I am also an avid reader and occasional writer of fiction.</p>
+			</div>
+		</div>
+	</section>
 	<section id="contact" class="contact">
 		<div class="wrapper">
-			<h2>Contact</h2>
+			<h2>Get in Touch</h2>
 			<div class="contactInfo">
 				<a href="mailto:milena.djokic@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>milena.djokic@gmail.com</a>
 				<a href="https://twitter.com/milenadjo" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>@milenadjo</a>
@@ -329,6 +341,10 @@ LinkedIn</a>
 	</footer>
 	<script src="https://use.fontawesome.com/be7cb9fabf.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="public/scripts/wow.min.js"></script>
+	<script>
+	    new WOW().init();
+	</script>
 	<script src="public/scripts/main.js"></script>
 </body>
 </html>

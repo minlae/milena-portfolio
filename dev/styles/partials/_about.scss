@@ -1,0 +1,47 @@
+.about {
+	padding-top: 60px;
+	padding-bottom: 80px;
+	background-color: $bgGray;
+	// border: 1px solid black;
+	// display: flex;
+
+	p {
+		display: block;
+		color: $mainText;
+		font-family: $sansSerif;
+		font-size: 1.2rem;
+		text-align: left;
+		margin-top: 20px;
+		font-weight: 300;
+		// margin: 0 auto;
+		// width: 70%;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 0;
+		letter-spacing: 1px;
+
+	}
+
+	.aboutText {
+		width: 65%;
+	}
+
+	.wrapper {
+		// border: 1px solid blue;
+	}
+
+	.aboutContainer {
+		display: flex;
+		justify-content: space-between;
+		width: 70%;
+	}
+
+	.aboutPic {
+		background-image: url("../../assets/profile_pam_lau_sm.jpg");
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		background-size: cover;
+	}
+}

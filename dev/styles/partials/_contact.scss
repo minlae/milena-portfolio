@@ -1,15 +1,16 @@
 .contact {
 	padding-top: 60px;
 	padding-bottom: 80px;
-	background-color: $bgGray;
+	// background-color: $bgGray;
+	background-color: $mainText;
 	
 	h2 {
-		color: $mainText;
+		color: white;
 	}
 
 	p, a {
 		display: block;
-		color: $mainText;
+		color: white;
 		font-family: $sansSerif;
 		font-size: 1.2rem;
 		text-align: center;
@@ -28,7 +29,7 @@
 		}
 
 		&:hover {
-			color: $yellow;
+			// color: $yellow;
 			transform: scale(1.2);
 		}
 	}
