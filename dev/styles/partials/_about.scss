@@ -32,9 +32,24 @@
 	}
 
 	.aboutContainer {
+		@include respond-to("large") {
+			width: 100%;
+		}
+		@include respond-to("xlarge") {
+			width: 55%;
+		}
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		width: 70%;
+		
+		@include respond-to("medium") {
+			width: 100%;
+		}
+		@include respond-to("small") {
+			justify-content: center;
+			width: 100%;
+		}
 	}
 
 	.aboutPic {
